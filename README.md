@@ -1,5 +1,7 @@
 # Grok 4.7 C# Demo
 
+![Grok 4.7](UsingGrok4.7withCSharp.jpg)
+
 [![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![C# Developers](https://img.shields.io/badge/For-C%23%20Developers-239120)
@@ -92,4 +94,4 @@ README.md                     This file
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+ohis project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
