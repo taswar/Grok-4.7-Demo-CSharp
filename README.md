@@ -10,10 +10,10 @@
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
-- 📖 Full walkthrough: [Using Grok 4.7 with C#](https://taswar.zeytinsoft.com/grok-4-7-csharp-developers-guide/)
+- 📖 Full walkthrough: [Using Grok 4.7 with C#](https://taswar.zeytinsoft.com/grok-4-7-csharp-developers-guide/?utm_source=github&utm_medium=readme&utm_campaign=Grok-4.7-Demo-CSharp&utm_content=walkthrough)
 - ⭐ If this saved you time, star the repo so other .NET developers can find it.
 - 🔁 Related: [Grok 4.6 C# Demo](https://github.com/taswar/Grok46MSFoundryDemo) and [GPT-6.1 Sol C# Demo](https://github.com/taswar/Gpt-6.1-Sol-CSharp-Demo)
-- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/?utm_source=github&utm_medium=readme&utm_campaign=Grok-4.7-Demo-CSharp&utm_content=ai-models-hub)
 - For my free ebook on prompt engineering, see [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
 
 A .NET 10 console app that demonstrates common Grok model patterns on Microsoft Foundry, using the official OpenAI C# SDK and Entra ID (Azure Identity) authentication. Each use case is a small, self-contained example.
