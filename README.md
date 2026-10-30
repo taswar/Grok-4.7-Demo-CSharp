@@ -1,14 +1,20 @@
 # Grok 4.7 C# Demo
 
-![Grok 4.7](UsingGrok4.7withCSharp.jpg)
+![Using Grok 4.7 with C# and .NET 10](UsingGrok4.7withCSharp.jpg)
 
+[![build](https://github.com/taswar/Grok-4.7-Demo-CSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/taswar/Grok-4.7-Demo-CSharp/actions/workflows/dotnet.yml)
 [![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![C# Developers](https://img.shields.io/badge/For-C%23%20Developers-239120)
 ![Grok 4.7](https://img.shields.io/badge/Grok%204.7-Reasoning%20Model-orange)
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+
+- 📖 Full walkthrough: [Using Grok 4.7 with C#](https://taswar.zeytinsoft.com/grok-4-7-csharp-developers-guide/)
+- ⭐ If this saved you time, star the repo so other .NET developers can find it.
+- 🔁 Related: [Grok 4.6 C# Demo](https://github.com/taswar/Grok46MSFoundryDemo) and [GPT-6.1 Sol C# Demo](https://github.com/taswar/Gpt-6.1-Sol-CSharp-Demo)
+- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For my free ebook on prompt engineering, see [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
 
 A .NET 10 console app that demonstrates common Grok model patterns on Microsoft Foundry, using the official OpenAI C# SDK and Entra ID (Azure Identity) authentication. Each use case is a small, self-contained example.
 
@@ -18,6 +24,19 @@ A .NET 10 console app that demonstrates common Grok model patterns on Microsoft 
 - Large output budget suited to drafting specifications and detailed assessments
 - Agentic tool/function calling for grounded, non-hallucinated answers
 - Served through Microsoft Foundry's OpenAI-compatible endpoint, so existing OpenAI SDK code works
+
+## Quick start
+
+```bash
+git clone https://github.com/taswar/Grok-4.7-Demo-CSharp.git
+cd Grok-4.7-Demo-CSharp
+dotnet user-secrets set "Foundry:Endpoint" "https://<your-foundry-resource>.services.ai.azure.com"
+dotnet user-secrets set "Foundry:Deployment" "<your-grok-deployment>"
+az login
+dotnet run -- 1
+```
+
+See [Configuration](#configuration) for details.
 
 ## Prerequisites
 
@@ -88,10 +107,15 @@ If you still hit `exceeded the configured timeout`, raise `NetworkTimeout` furth
 ```
 Program.cs                    Entry point, configuration, and all use cases
 Grok-4.7-Demo-Csharp.csproj   .NET 10 project and package references
+inventory-system-spec.md      Sample output from case 1 (spec draft)
+impact-assessment.md          Sample output from case 4 (impact assessment)
+UsingGrok4.7withCSharp.jpg    Banner image for this README
+.github/workflows/dotnet.yml  Build workflow that runs on every push and pull request
+CONTRIBUTING.md               How to report bugs and contribute changes
 LICENSE                       MIT license
 README.md                     This file
 ```
 
 ## License
 
-ohis project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
